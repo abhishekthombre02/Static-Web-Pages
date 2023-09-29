@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&family=Montserrat:wght@200&family=Poppins:wght@200;300;400;600;700&family=Sacramento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/* navigation-bar */
+
+.navigation {
+    height: auto;
+    width:100%;
+    background-color: #F1EFEF;
+}
+
+.navigation a{
+
+    display: inline-block;
+    font-size: 1.5rem;
+    padding:5px;
+   
+}
+
+#home{
+
+    background-color: orange;
+
+}
+
+
+.title{
+
+    height: 560px;
+    width: 100%;
+    background-image: url("images/risingmaratha.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-bottom: 5px;
+
+}
+
+.title h2{
+        
+        font-size: 2rem;
+        font-family: 'Dancing Script', cursive;
+}
+
+.title h1{
+
+    font-size: 2.5rem;
+    font-family: cursive;
+}
+
+.container{
+       
+    padding-top:15%;
+    padding-left:5%;
+    width: 50%;
+
+}
+
+.information{
+
+    background-color: #F1EFEF;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:15px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    border-top: 2px solid black;
+}
+.about{
+    text-align: justify;
+    background-color: #213555;
+    width:50%;
+}
+.about p{
+    display: inline-block;
+    width: 80%;
+    margin-left:10%;
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: large;
+    
+}
+
+.Personal-info{
+    background-color: #213555;
+    
+}
+.Personal-info table{
+    text-align: left;
+    width: 80%;
+    margin-left:10%;
+    font-size: large;
+    line-height: 30px;
+}
+
+.head-two{
+    text-align: center;
+    padding:5px;
+    margin:20px 0 15px 0;
+}
+
+
+.timeline{
+    background-color: #F1EFEF;
+    border-top: 2px solid black;
+}
+.timeline h2{
+    text-align: center;
+    padding:20px;
+}
+.timeline ul{
+
+    margin-left: 5%;
+    line-height: 25px;
+    padding-block-end: 20px;
+}
+
+
+.ceremony{
+
+    text-align: center;
+    background-color: #FFB000;
+}
+
+.coronation-img{
+
+    width: 90%;
+    margin:5% 5% 0 5%;
+    height:auto;
+}
+.ceremony figcaption{
+
+    display: inline-block;
+    color: black;
+    padding:5px 20px;
+    font-size: medium;
+   
+    margin-bottom: 10px;
+}
+.ceremony p{
+
+    display: inline-block;
+    margin: 15px auto;
+    padding:5px;
+    background-color: #F1EFEF;
+    border: 2px dotted black;
+}
+
+#ceremony p a{
+
+    background-color: greenyellow;
+    padding:2px;
+}
+
+footer{
+
+    height: 50px;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
