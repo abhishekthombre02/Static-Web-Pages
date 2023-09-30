@@ -1,0 +1,203 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="text-center" id="title">freeCodeCamp Survey Form</h1>
+            <p class="text-center" id="description">Thank you for taking time and helping us to improve our platform</p>
+        </div>
+
+        <form id="survey-form" action="#" method="post">
+            <div class="enter-details">
+                <label for="name" class="label-style" id="name-label">Name</label>
+                <input type="text" class="text-input" placeholder="Enter Your Name" id="name" required>
+            </div>
+            <div class="enter-details">
+                <label for="email" class="label-style" id="email-label">Email</label>
+                <input type="email" class="text-input" placeholder="Enter Your Email" id="email" required>
+            </div>
+            <div class="enter-details">
+                <label for="number" class="label-style" id="number-label">Age</label>
+                <input type="number" class="text-input" placeholder="Enter Your Age" id="number" min="1" max="100">
+            </div>
+            
+    <div class="enter-details">
+    <label class="label-style">Which option best describes your current role?</label>
+    <select name="role" id="dropdown" class="select-opt">
+        <option disabled selected>Choose your role</option>
+        <option value="student">Student</option>
+        <option value="job">Full-time job</option>
+        <option value="learner">Full-time learner</option>
+        <option value="quite">Prefer not to say</option>
+        <option value="other">Other</option>
+    </select>
+</div>
+                <div class="enter-details">
+                    <label class="label-style">Would you recommend freeCodeCamp to a friend?</label>
+                    <div class="new-line"><input type="radio" name="recommendation"value="definetly">Definetly</div> 
+                    <div class="new-line"><input type="radio" name="recommendation" value="maybe" >Maybe</div>
+                    <div class="new-line"><input type="radio" name="recommendation" value="notsure" >Not sure</div>
+                </div>
+
+                <div class="enter-details">
+                    <label for="name" class="label-style">What is your favorite feature of freeCodeCamp?</label>
+                    <select name="role" id="my-role" class="select-opt" > 
+                        <option disabled selected> select an option</option>
+                        <option value="student">challanges</option>
+                        <option value="job">projects</option>
+                        <option value="learner">community</option>
+                        <option value="quite">open source</option>
+                    </select>
+                </div>
+
+                <div class="enter-details">
+                    <label  class="label-style">Would you recommend freeCodeCamp to a friend?</label>
+                       <div class="new-line"><input type="checkbox" value="frontend" >Front-end Projects</div> 
+                       <div class="new-line"><input type="checkbox" value="backend">Back-end Projects</div> 
+                       <div class="new-line"><input type="checkbox" value="data">Data Visualization</div> 
+                       <div class="new-line"><input type="checkbox" value="challenge">Challenges</div> 
+                       <div class="new-line"><input type="checkbox" value="opensource">Open Source Community</div> 
+                       <div class="new-line"><input type="checkbox" value="help">Gitter help rooms</div> 
+                       <div class="new-line"><input type="checkbox" value="video">Videos</div> 
+                       <div class="new-line"><input type="checkbox" value="meetup">City Meetups</div> 
+                       <div class="new-line"><input type="checkbox" value="wiki">Wiki</div> 
+                       <div class="new-line"><input type="checkbox" value="form">Forum</div> 
+                       <div class="new-line"><input type="checkbox" value="courses">Additional Courses</div> 
+                </div>
+                <div class="enter-details">
+                    <label for="name" class="label-style">Any comments or suggestions?</label>
+                       <textarea name="feedback" id="feedback" class="textarea" placeholder="Input message here!"></textarea>
+                </div>
+       
+<div class="enter-details">
+    <button id="submit" type="submit">Submit</button>
+</div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Merriweather&family=Montserrat:wght@200&family=Poppins:wght@300;400;600;700&family=Sacramento&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+/* container */
+.container{
+    /* height: auto; */
+    width: 60%;
+    margin: 3.125rem auto 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+/* heading */
+.header{
+    padding: 0 0.635rem;
+    margin-bottom: 1.875rem;
+}
+.header h1,p{
+    margin-bottom: 0.5rem;
+}
+
+
+/* form container */
+
+.container-form{
+    
+    /* height: auto; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(27, 27, 50, 0.8);
+    padding: 2.5rem;
+
+}
+
+.enter-details{
+ 
+    color:white;
+    margin-bottom: 1.2rem;
+    padding: 4px;
+    margin-bottom: 1.56rem;
+}
+
+.label-style {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: #f3f3f3;
+    font-size: 1.125rem;
+}
+
+.text-input,
+.select-opt {
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    outline: 0;
+    font-size: 1rem;
+    color: #5b5b5b;
+}
+
+/* radio button input*/
+.new-line{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    
+}
+.new-line input{
+    width: 1.125rem;
+    height: 1.125rem;
+    margin-right: 10px;
+}
+.textarea{
+
+    width: 100%;
+    min-height: 100px;
+    resize:vertical;
+    outline: 0;
+    padding: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+}
+
+#submit-button {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: #37AF65;
+    border: 1px solid green;
+    color: white;
+    border-radius: 5px;
+}
+
+
+** end of undefined **
+
