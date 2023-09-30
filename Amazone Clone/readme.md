@@ -2,6 +2,8 @@
 
 This is a static clone of the popular e-commerce website Amazon. 
 
+https://user-images.githubusercontent.com/137371709/271477715-725ca1c5-ef73-4fe2-b42d-87ee4eef9299.png
+
 ## Table of Contents
 
 - Features
